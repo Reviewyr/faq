@@ -1,0 +1,132 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.background{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ flex-wrap: wrap;
+}
+ .moon{
+    position: relative;
+    display: inline-block;
+    margin: 40px;
+    margin-left: -600px;
+    width: 600px;
+    height: 600px; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+ }
+ 
+
+ 
+ #moon{
+     width: 200px;
+     height: 200px;
+     
+ }
+  
+ 
+ 
+ .star{
+    position: absolute;
+    bottom: 500px;
+    right: 600px;
+    height: 10px;
+    width: 10px;
+    animation-direction: 1c;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: blink;
+}
+ 
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.star,.star2,.star3,.star4 {
+    animation: blink 4s;
+    animation-iteration-count: infinite;
+}
+
+ 
+ #star{
+    width: 50px;
+    height: 50px;
+ }
+
+ .star2{
+    position: absolute;
+    bottom: 400px;
+    right: 600px;
+    left: 400px;
+    height: 10px;
+    width: 10px;
+
+
+ }
+ 
+ #star2{
+    width: 50px;
+    height: 50px;
+ }
+
+ .star3{
+    position: absolute;
+    bottom: 300px;
+    right: 300px;
+    height: 10px;
+    width: 20px;
+    
+
+
+ }
+ 
+ #star3{
+    width: 50px;
+    height: 50px;
+ }
+
+ .star4{
+    position: absolute;
+    bottom: 200px;
+    right: 1100px;
+    height: 10px;
+    width: 20px;
+    
+
+
+ }
+ 
+ #star4{
+    width: 50px;
+    height: 50px;
+ }
+
